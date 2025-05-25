@@ -302,7 +302,9 @@ nav ul li a {
 
 }
 .hero-image{
-    background-image: url(../First-Design/Images/ShippingMan.jpg);
+    /* background-image: url(../First-Design/Images/ShippingMan.jpg); */
+     /* background-image: url('https://github.com/SolutionEgypt/LandingShippin/blob/main/Images/ShippingMan.jpg'); */
+         background-image: url('https://solutionegypt.github.io/LandingShippin/Images/ShippingMan.jpg');
     width:500px;
     height: 500px;
     border-radius: 10%;
