@@ -1,0 +1,325 @@
+.rubik-title {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+body {
+    color: #333;
+       font-family: "Rubik", sans-serif;
+
+}
+
+header,footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1vw 5vw; */
+        padding: 1vw 8vw;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color:  #ff6200d9;
+    
+  
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+      background-color:   #ff6200d9;
+ 
+    color: #fff;
+    /* padding: 5vw; */
+        padding: 3vw 8vw;
+    min-height: 50vh;
+}
+
+.hero-content h1 {
+
+    font-size: clamp(1.2rem, 3vw, 3.2rem);
+    margin-bottom: 2vw;
+    /* color: black; */
+    color: #efe9e9
+}
+
+.hero-content button {
+    padding: 1vw 2vw;
+    background-color: #fff;
+    color: #ff6200;
+    border: none;
+    border-radius: 30px;
+    font-size: clamp(1.2rem, 2vw, 1.2rem);
+    cursor: pointer;
+    transition: all 0.3s ease; 
+         background-color:  #ff6200;
+           color: #fff;
+
+}
+.hero-content button:hover{
+        background-color:  white;
+            color:#ff6200;
+       
+}
+
+.hero-image svg {
+
+        transform: translateX(-80px); /* انزياح لليسار */
+
+}
+
+.services {
+    /* padding: 5vw; */
+         padding: 3vw 8vw;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 3vw;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+}
+
+.service {
+    background-color: #f9f9f9;
+    padding: 3vw;
+    border-radius: 15px;
+}
+
+.service .icon {
+    background-color: #ff6200;
+    width: clamp(40px, 5vw, 50px);
+    height: clamp(40px, 5vw, 50px);
+    margin: 0 auto 1vw;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service h3 {
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    margin-bottom: 1vw;
+}
+
+.service p {
+    font-size: clamp(0.8rem, 1.2vw, 0.9rem);
+    color: #666;
+}
+
+
+.why-choose-us {
+    /* padding: 5vw; */
+         padding: 3vw 8vw;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 3vw;
+}
+
+.why-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+}
+
+
+.why-text p {
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    padding-top: 10px;
+}
+
+.why-map {
+    flex: 1;
+    text-align: center;
+    color: #ccc;
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+}
+
+.why-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.why-items .item {
+    background-color: #fff;
+    padding: 1vw;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.why-items .item .icon {
+    background-color: #ff6200;
+    width: clamp(30px, 4vw, 40px);
+    height: clamp(30px, 4vw, 40px);
+    margin: 0 auto 1vw;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-items .item h3 {
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+
+
+@media (max-width: 768px) {
+ 
+    header {
+        flex-direction: column;
+        padding: 3vw;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 2vw;
+    }
+
+    nav ul li {
+        margin: 1vw 0;
+    }
+
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 8vw;
+        min-height: auto;
+    }
+
+    .hero-content {
+        margin-bottom: 4vw;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+
+    .hero-content button {
+        padding: 2vw 4vw;
+    }
+
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .why-content {
+        flex-direction: column;
+        gap: 4vw;
+    }
+
+    .why-items {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+    }
+
+    .services h2, .why-choose-us h2 {
+        font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    }
+
+    .service, .why-items .item {
+        padding: 3vw;
+    }
+}
+
+.myimage{
+    width: 800px;
+    height: 300px;
+}
+.btnbook{
+    /* background-color: red;
+    color: green; */
+
+}
+
+.why-map .imagerest{
+    width: 500px;
+    height: 300px;
+}
+.containerfooter{
+    display: flex;
+    justify-content: center;
+    align-items: centerhero-image;
+
+}
+.footersolution{
+ 
+        color: #ff6200;
+}
+.image{
+
+    border-radius: 180px;
+
+}
+.hero-image{
+    background-image: url(../First-Design/Images/ShippingMan.jpg);
+    width:500px;
+    height: 500px;
+    border-radius: 10%;
+}
+
+
+ .txt{
+    border: 0;
+    padding: 20px;
+    border-radius: 2px;
+    font-family: "Rubik", sans-serif;
+ }
+ .containerTrackNumer{
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+ }
+ .fa-cart-flatbed-suitcase{
+    color: #ff6200;
+ }
