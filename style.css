@@ -431,6 +431,6 @@ label {
    }
 .choose{
     display: flex;
-    gap: 600px;
+   justify-content: space-around;
 
 }
